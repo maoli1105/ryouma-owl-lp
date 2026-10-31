@@ -1,0 +1,7 @@
+背景候補（Unsplash 無料ライセンス・商用利用可・クレジット表記不要）
+bg_free1.jpg ① 濃紺の星空         https://unsplash.com/photos/47SjYy0   (photo-1614279629245)
+bg_free2.jpg ② 星が多い夜空       https://unsplash.com/photos/JEqXTm5dQ8c
+bg_free3.jpg ③ 森のシルエットと夜空 https://unsplash.com/photos/Zg5uRJDLdD4
+bg_free4.jpg ④ 見上げた木々と星   https://unsplash.com/photos/R1GRvhW0
+※①④はページ上のIDが短縮表示だったため、URLで開けない場合は photo-ID（images.unsplash.com）で確認
+bg_owl.jpg  自作（現在LPで使用中）

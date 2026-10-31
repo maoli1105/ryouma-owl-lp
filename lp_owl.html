@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ペアフクロウ プレート</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@300;400;500&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#22303a;--sub:#6f7a82;--bg:#f6f3ec;--dark:#14202b;--gold:#b8923a;--blue:#2f5fa8;--line:#dcd4c4}
+*{box-sizing:border-box}
+body{margin:0;background:#1d2c40 url(img/bg_free3.jpg) center/cover fixed;color:var(--ink);font-family:"Noto Sans JP",sans-serif;font-weight:300}
+.note{max-width:640px;margin:24px auto 0;padding:14px 18px;background:#fff;font-size:12px;line-height:1.8;border-left:3px solid var(--gold)}
+.col{width:640px;max-width:100%;margin:60px auto 120px;background:var(--bg);box-shadow:0 3px 10px rgba(0,0,0,.3),0 30px 90px rgba(0,0,0,.55)}
+.f{position:relative;overflow:hidden}
+.lb{position:absolute;left:8px;top:8px;z-index:5;font:500 10px/1 "Noto Sans JP";background:rgba(0,0,0,.6);color:#fff;padding:4px 7px;letter-spacing:.04em}
+.dark{background:var(--dark);color:#ece6d8}
+.en{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;font-size:12px;color:var(--gold)}
+h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:25px;line-height:1.7;letter-spacing:.08em;margin:14px 0 0}
+p.t{font-size:13.5px;line-height:2.1;letter-spacing:.04em;margin:22px 0 0}
+.pad{padding:80px 52px}
+.c{text-align:center}
+.img{width:100%;display:block}
+/* FV */
+.fv{position:relative;background:radial-gradient(circle at 50% 42%,#2b4a74 0,#14202b 70%);padding:56px 0 0;text-align:center;color:#fff}
+.fv .kicker{font-family:"Noto Serif JP",serif;font-size:13px;letter-spacing:.4em;color:#e6cf8f}
+.fv h1{font-family:"Noto Serif JP",serif;font-weight:400;font-size:38px;letter-spacing:.16em;margin:14px 0 0;line-height:1.5}
+.fv h1 b{color:#e6cf8f;font-weight:600}
+.fv .sub{margin:10px 0 0;font-size:12px;letter-spacing:.2em;color:#c9d3de}
+.fv img{width:84%;margin:30px auto 0;display:block;border-radius:50% 50% 0 0;box-shadow:0 0 80px rgba(230,207,143,.25)}
+.fv .badges{display:flex;justify-content:center;gap:10px;padding:26px 0 34px;background:#14202b}
+.fv .badges span{border:1px solid #e6cf8f;color:#e6cf8f;border-radius:50%;width:92px;height:92px;display:flex;align-items:center;justify-content:center;font-family:"Noto Serif JP",serif;font-size:13px;line-height:1.5;letter-spacing:.06em}
+/* 当て字 */
+.kanji{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:36px;border:1px solid var(--line)}
+.kanji div{background:#fffdf8;padding:26px 14px;text-align:center}
+.kanji b{display:block;font-family:"Noto Serif JP",serif;font-weight:600;font-size:30px;letter-spacing:.18em;color:var(--dark)}
+.kanji b em{font-style:normal;color:var(--gold)}
+.kanji small{display:block;font-size:11.5px;color:var(--sub);letter-spacing:.06em;margin-top:8px;line-height:1.7}
+.small{font-size:10.5px;color:var(--sub);margin-top:14px;line-height:1.7}
+/* 家族 */
+.fam{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}
+.fam div{border-top:2px solid var(--gold);padding:14px 4px 0;text-align:center;font-size:12px;line-height:1.8}
+.fam b{display:block;font-family:"Noto Serif JP",serif;font-size:16px;font-weight:400;letter-spacing:.1em}
+/* 場所 */
+.place{display:grid;gap:14px;margin-top:30px}
+.place div{display:flex;gap:16px;align-items:flex-start;background:#fffdf8;padding:18px 20px;border:1px solid var(--line)}
+.place i{font-style:normal;font-family:"Noto Serif JP",serif;color:#fff;background:var(--dark);min-width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px}
+.place b{font-family:"Noto Serif JP",serif;font-weight:400;font-size:16px;letter-spacing:.06em}
+.place p{margin:4px 0 0;font-size:12.5px;line-height:1.9;color:#4c5862}
+/* gift */
+.gift{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:26px}
+.gift span{background:#fff;color:var(--dark);border-radius:20px;padding:8px 16px;font-size:12.5px;letter-spacing:.06em}
+/* spec */
+table.sp{width:100%;border-collapse:collapse;margin-top:30px;font-size:12.5px}
+table.sp th,table.sp td{border-bottom:1px solid var(--line);padding:14px 10px;text-align:left;line-height:1.8}
+table.sp th{width:30%;font-weight:500;color:var(--sub)}
+.qa{margin-top:28px}
+.qa dt{font-family:"Noto Serif JP",serif;font-size:14.5px;padding-top:18px}
+.qa dt::before{content:"Q. ";color:var(--gold)}
+.qa dd{margin:6px 0 0;font-size:12.5px;line-height:1.9;color:#4c5862;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.qa dd::before{content:"A. ";color:var(--blue)}
+.cta{background:linear-gradient(#14202b,#203550);padding:60px 40px;text-align:center;color:#fff}
+.cta h2{color:#fff}
+.cta .btn{display:inline-block;margin-top:26px;background:linear-gradient(#d9b85c,#b8923a);color:#14202b;font-weight:500;padding:18px 54px;border-radius:40px;letter-spacing:.14em;font-size:15px;text-decoration:none}
+.rc{padding:64px 0 52px;text-align:center;overflow:hidden}
+.rc .track{position:relative;height:300px;margin:30px 0 0}
+.rc .it{position:absolute;left:50%;top:30px;width:220px;height:220px;margin-left:-110px;transition:transform .55s ease,opacity .55s;cursor:pointer;border-radius:6px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.45);background:#fff}
+.rc .it img{width:100%;height:100%;object-fit:cover;display:block}
+.rc .nm{margin:6px 0 0;font-family:"Noto Serif JP",serif;font-size:21px;letter-spacing:.08em;color:#fff;min-height:32px}
+.rc .tg{display:inline-block;margin-top:10px;font-size:11.5px;letter-spacing:.12em;color:#14202b;background:#e6cf8f;padding:4px 14px;border-radius:99px}
+.rc .cp{margin:14px auto 0;max-width:440px;min-height:46px;font-size:13px;line-height:1.8;color:#c9d3de}
+.rc .pr{margin-top:6px;font-family:"Cormorant Garamond",serif;font-size:26px;color:#e6cf8f;letter-spacing:.06em}
+.rc .pr small{font-family:"Noto Sans JP";font-size:11px;margin-left:2px;color:#9aa6b0}
+.rc .txt{transition:opacity .3s}.rc .txt.swap{opacity:0}
+.rc .nav{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:20px;font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.12em;color:#c9d3de}
+.rc .nav button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(230,207,143,.8);background:rgba(230,207,143,.12);color:#e6cf8f;font-size:24px;line-height:1;cursor:pointer}
+.rc .nav button:hover{background:rgba(230,207,143,.3)}
+.rc .go{display:inline-block;margin-top:22px;border:1px solid #e6cf8f;color:#e6cf8f;text-decoration:none;font-size:12.5px;letter-spacing:.14em;padding:11px 30px;border-radius:99px}
+@media(max-width:640px){.col{margin:0}.pad{padding:60px 24px}.fv h1{font-size:30px}.fv .badges span{width:80px;height:80px;font-size:12px}h2{font-size:21px}}
+</style></head><body>
+
+<div class="note"><b>【サンプル】龍馬株式会社さま 楽天LP案</b>　商品：ペアフクロウのプレート 台付き（ヤフオク d1246259060）<br>画像は出品中の写真を仮置き。本番は白背景・置き場所のイメージ写真を撮り直す想定です。左上の黒ラベルは各パートの役割メモ（本番では消します）。</div>
+
+<div class="col">
+
+<!-- FV -->
+<div class="f fv"><span class="lb">FV｜ひと目で「縁起物」と分かる</span>
+  <div class="kicker">苦労知らずの、守り神。</div>
+  <h1><b>不苦労</b>を、<br>そばに飾る。</h1>
+  <p class="sub">ステンドグラス風 ペアフクロウ アクリルスタンド</p>
+  <img src="img/01.jpg" alt="ステンドグラス風 ペアフクロウのプレート 台付き">
+  <div class="badges"><span>不苦労<br>福籠</span><span>家族<br>円満</span><span>商売<br>繁盛</span></div>
+</div>
+
+<!-- 共感 -->
+<div class="f pad c"><span class="lb">共感｜なぜ今フクロウか</span>
+  <div class="en">WHY OWL</div>
+  <h2>毎日がんばる人の、<br>そばにいてほしいもの。</h2>
+  <p class="t">仕事、家のこと、子どものこと。<br>苦労は、できれば少ない方がいい。<br><br>昔から日本では、フクロウは<br>「苦労を遠ざける鳥」として<br>玄関や仕事場に飾られてきました。</p>
+</div>
+
+<!-- 語呂 -->
+<div class="f pad dark c" style="padding-top:70px"><span class="lb">縁起の意味｜当て字で伝える</span>
+  <div class="en">FORTUNE WORDS</div>
+  <h2>「ふくろう」に込められた、<br>4つの願い。</h2>
+  <div class="kanji">
+    <div><b><em>不</em>苦労</b><small>苦労をしない<br>苦労が去る</small></div>
+    <div><b><em>福</em>籠</b><small>福が籠（こも）る<br>福をためこむ</small></div>
+    <div><b><em>福</em>朗</b><small>福が来て<br>朗らかに暮らせる</small></div>
+    <div><b><em>不</em>老</b><small>いつまでも<br>元気で長生き</small></div>
+  </div>
+  <p class="t" style="margin-top:30px">さらに、首がぐるりと回ることから<br>「お金に困って<b>首が回らなくなる</b>ことがない」と<br>商売繁盛のお守りにも。<br>夜でも目が利く「森の賢者」は、<br>先を見通す知恵の象徴でもあります。</p>
+  <p class="small" style="color:#9aa6b0">※いずれも古くからの言い伝え・語呂合わせです。</p>
+</div>
+
+<!-- ペア -->
+<div class="f"><span class="lb">差別化｜ペア＝夫婦円満・家内安全</span>
+  <img class="img" src="img/owl_pair_b.jpg" alt="寄り添う2羽のフクロウ アクリルスタンド">
+</div>
+<div class="f pad c" style="padding-top:56px"><span class="lb">ペアの意味</span>
+  <div class="en">PAIR</div>
+  <h2>ひとりより、ふたり。<br>苦労も半分に。</h2>
+  <p class="t">枝の上で、頬を寄せ合う2羽のフクロウ。<br>夫婦円満、家族の健康、大切な人とのご縁。<br>“ふたりで苦労知らず”の願いを、ひとつに。</p>
+</div>
+
+<!-- デザイン -->
+<div class="f pad dark c"><span class="lb">商品力｜見た目の美しさ</span>
+  <div class="en">DESIGN</div>
+  <h2>宝石をまとったような、<br>ステンドグラス風の輝き。</h2>
+  <p class="t">深い青の瞳、ブルーからグリーンへ移ろう羽。<br>アクリル板に細かく描き込んでいるので、<br>平面なのに立体的に見えるのが特徴です。<br>光が当たる窓辺に置くと、透明の縁がきらりと光ります。</p>
+</div>
+
+<!-- 置き場所 -->
+<div class="f pad"><span class="lb">使用シーン｜風水的な置き場所</span>
+  <div class="c"><div class="en">WHERE TO PLACE</div>
+  <h2>どこに飾る？<br>おすすめの置き場所</h2></div>
+  <div class="place">
+    <div><i>玄関</i><span><b>福を迎え、苦労を入れない</b><p>家の入口は運の入口。靴箱の上に、来客を迎える向きで。</p></span></div>
+    <div><i>リビング</i><span><b>家族が集まる場所に</b><p>テレビ台や棚の上に。家族円満のシンボルとして。</p></span></div>
+    <div><i>仕事場</i><span><b>デスク・レジ横に</b><p>商売繁盛・学業成就のお守りに。幅18cmで場所を取りません。</p></span></div>
+  </div>
+</div>
+
+<!-- サイズ -->
+<div class="f"><span class="lb">サイズ｜不安をなくす</span>
+  <img class="img" src="img/owl_size_c.jpg" alt="サイズ 幅18cm 高さ16.3cm 厚み0.5cm 台座13×8cm">
+</div>
+
+<!-- ギフト -->
+<div class="f pad dark c"><span class="lb">ギフト需要｜客単価・購入理由を広げる</span>
+  <div class="en">GIFT</div>
+  <h2>「苦労しませんように」を<br>贈る、という選択。</h2>
+  <p class="t">888円という縁起のよい“末広がり”の価格。<br>気軽に贈れて、意味まで伝わるプチギフトです。</p>
+  <div class="gift"><span>新築・引越し祝い</span><span>開店・開業祝い</span><span>結婚祝い</span><span>出産祝い</span><span>就職・昇進祝い</span><span>敬老の日</span><span>受験のお守り</span></div>
+</div>
+
+<!-- スペック -->
+<div class="f pad"><span class="lb">商品詳細</span>
+  <div class="c"><div class="en">SPEC</div><h2>商品詳細</h2></div>
+  <table class="sp">
+    <tr><th>商品名</th><td>ステンドグラス風 ペアフクロウのプレート 台付き</td></tr>
+    <tr><th>サイズ</th><td>約 幅18cm × 高さ16.3cm（台座含む）<br>厚み 約0.5cm／台座 約13cm × 8cm</td></tr>
+    <tr><th>素材</th><td>アクリル</td></tr>
+    <tr><th>仕様</th><td>差し込み式の台座付き・防水仕様</td></tr>
+    <tr><th>発送</th><td>広島県より、ご注文から1〜2日で発送</td></tr>
+    <tr><th>ご注意</th><td>ガラス製・天然石ではなく、アクリル板への印刷です。<br>モニター環境により実物と色味が異なる場合がございます。</td></tr>
+  </table>
+  <dl class="qa">
+    <dt>本物のステンドグラスですか？</dt><dd>アクリル板にステンドグラス風のデザインを施したものです。割れにくく、お子さまのいるご家庭でも安心です。</dd>
+    <dt>組み立ては必要ですか？</dt><dd>台座の溝に本体を差し込むだけ。工具は不要です。</dd>
+    <dt>他のデザインもありますか？</dt><dd>ほかにも縁起物のデザインを多数ご用意しています。同梱も可能です。</dd>
+  </dl>
+</div>
+
+<!-- 関連商品 -->
+<div class="f dark rc"><span class="lb">回遊｜類似の縁起物（ヤフオク出品中→楽天へ新規投入予定）</span>
+  <div class="en">LUCKY CHARMS</div>
+  <h2>フクロウと一緒に飾りたい、縁起物。</h2>
+  <div class="track" id="rtrack"><div class="it"><img src="img/car/e1245038475.jpg" alt="月光フクロウ プレート"></div><div class="it"><img src="img/car/w1228670288.jpg" alt="フクロウ5兄弟 プレート"></div><div class="it"><img src="img/car/v1248338925.jpg" alt="蛙のプレート 台付き 大"></div><div class="it"><img src="img/car/b1246246805.jpg" alt="3匹の蛙のプレート"></div><div class="it"><img src="img/car/k1249700874.jpg" alt="ユニコーンのプレート 台付き"></div><div class="it"><img src="img/car/k1238869109.jpg" alt="小鳥のプレート"></div><div class="it"><img src="img/car/e1242671337.jpg" alt="愛し合う蛙プレート"></div><div class="it"><img src="img/car/c1240153629.jpg" alt="招き猫 琥珀色 6cm"></div><div class="it"><img src="img/car/e1245038475.jpg" alt="月光フクロウ プレート"></div><div class="it"><img src="img/car/w1228670288.jpg" alt="フクロウ5兄弟 プレート"></div><div class="it"><img src="img/car/v1248338925.jpg" alt="蛙のプレート 台付き 大"></div><div class="it"><img src="img/car/b1246246805.jpg" alt="3匹の蛙のプレート"></div><div class="it"><img src="img/car/k1249700874.jpg" alt="ユニコーンのプレート 台付き"></div><div class="it"><img src="img/car/k1238869109.jpg" alt="小鳥のプレート"></div><div class="it"><img src="img/car/e1242671337.jpg" alt="愛し合う蛙プレート"></div><div class="it"><img src="img/car/c1240153629.jpg" alt="招き猫 琥珀色 6cm"></div></div>
+  <div class="txt" id="rtxt"><p class="nm" id="rnm"></p><span class="tg" id="rtg"></span><p class="cp" id="rcp"></p><p class="pr" id="rpr"></p><a class="go" id="rgo" href="#">この商品を見る</a></div>
+  <div class="nav"><button id="rprev" aria-label="前の商品">&lsaquo;</button><span id="rnum"></span><button id="rnext" aria-label="次の商品">&rsaquo;</button></div>
+</div>
+<script>
+(function(){
+  var D=[{"id": "e1245038475", "n": "月光フクロウ プレート", "tag": "不苦労・福郎", "c": "三日月にとまる青いフクロウ。夜の窓辺を見守る、ステンドグラス風。", "p": "500", "img": "img/car/e1245038475.jpg"}, {"id": "w1228670288", "n": "フクロウ5兄弟 プレート", "tag": "不苦労・家族円満", "c": "枝に並んだ5羽のフクロウ。にぎやかな家族の、苦労知らずのお守りに。", "p": "1,250", "img": "img/car/w1228670288.jpg"}, {"id": "v1248338925", "n": "蛙のプレート 台付き 大", "tag": "無事カエル", "c": "透き通るクリスタル調のカエル。旅行や通勤の、無事の帰りを願って。", "p": "1,000", "img": "img/car/v1248338925.jpg"}, {"id": "b1246246805", "n": "3匹の蛙のプレート", "tag": "無事カエル・福カエル", "c": "枝に並ぶ3匹のカエル。玄関に飾れば、家族みんな無事に帰る。", "p": "1,000", "img": "img/car/b1246246805.jpg"}, {"id": "k1249700874", "n": "ユニコーンのプレート 台付き", "tag": "幸運・午年", "c": "虹色にきらめくユニコーン。夢と幸運を運ぶ、ゴージャスな一枚。", "p": "1,250", "img": "img/car/k1249700874.jpg"}, {"id": "k1238869109", "n": "小鳥のプレート", "tag": "幸せを運ぶ", "c": "カラフルな小鳥が、幸せの知らせを運んできます。組み立ても簡単。", "p": "580", "img": "img/car/k1238869109.jpg"}, {"id": "e1242671337", "n": "愛し合う蛙プレート", "tag": "夫婦円満・無事カエル", "c": "寄り添う2匹のカエル。ペアフクロウと並べて、夫婦円満の縁起飾りに。", "p": "888", "img": "img/car/e1242671337.jpg"}, {"id": "c1240153629", "n": "招き猫 琥珀色 6cm", "tag": "招福・金運上昇", "c": "手のひらサイズのクリスタル招き猫。光にかざすと琥珀色に輝きます。", "p": "1,280", "img": "img/car/c1240153629.jpg"}];
+  /* 楽天に登録したら、ヤフオクIDに楽天の商品URLを入れる */
+  var URL={};
+  var N=D.length,its=[].slice.call(document.querySelectorAll('#rtrack .it')),M=its.length;
+  var STEP=190,pos=0,timer=null,idle=null,prevD=[];
+  var $=function(id){return document.getElementById(id);};
+  function dist(k){var d=((k-pos)%M+M)%M;return d>=M/2?d-M:d;}
+  function layout(){its.forEach(function(p,k){var d=dist(k);
+    p.style.transition=(prevD[k]!==undefined&&Math.abs(d-prevD[k])>1.5)?'none':'';
+    var s=Math.abs(d)<.5?1.18:.82;
+    p.style.transform='translateX('+(d*STEP)+'px) scale('+s+')';
+    p.style.opacity=Math.abs(d)>2.5?0:(Math.abs(d)<.5?1:.55);
+    p.style.zIndex=100-Math.abs(d)*10;prevD[k]=d;});}
+  function cur(){return((pos%N)+N)%N;}
+  function show(now){var c=D[cur()];
+    function fill(){$('rnm').textContent=c.n;$('rtg').textContent=c.tag;$('rcp').textContent=c.c;
+      $('rpr').innerHTML=c.p+'<small>円（税込）</small>';$('rgo').href=(URL[c.id]||'https://search.rakuten.co.jp/search/mall/?sid=420131');
+      $('rnum').textContent=(cur()+1)+' / '+N;$('rtxt').classList.remove('swap');}
+    if(now){fill();return;} $('rtxt').classList.add('swap');setTimeout(fill,280);}
+  function move(n){if(!n)return;pos+=n;layout();show();}
+  function auto(){clearInterval(timer);timer=setInterval(function(){move(1);},3200);}
+  function touched(){clearInterval(timer);clearTimeout(idle);idle=setTimeout(auto,10000);}
+  $('rnext').onclick=function(){touched();move(1);};
+  $('rprev').onclick=function(){touched();move(-1);};
+  its.forEach(function(p,k){p.onclick=function(){touched();move(Math.round(dist(k)));};});
+  layout();show(true);auto();
+})();
+</script>
+
+<!-- CTA -->
+<div class="f cta"><span class="lb">CTA｜関連商品へ回遊</span>
+  <h2>暮らしに、福をひとつ。</h2>
+  <p class="t" style="color:#c9d3de">縁起物の専門店 龍馬株式会社</p>
+  <a class="btn" href="https://search.rakuten.co.jp/search/mall/?sid=420131">縁起物をもっと見る</a>
+</div>
+
+</div>
+</body></html>
